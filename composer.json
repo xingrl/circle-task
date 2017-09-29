@@ -1,0 +1,14 @@
+{
+    "name": "xingrl/circle-task",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.6.0",
+        "phpmailer/phpmailer": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "xingrl\\circle_task\\": "src/"
+        }
+    }
+}
