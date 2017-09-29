@@ -14,9 +14,9 @@ class MailBy163
         $this->mail->IsSMTP(); // 启用SMTP
         $this->mail->Host = 'smtp.163.com'; //smtp服务器的名称（这里以QQ邮箱为例）
         $this->mail->SMTPAuth = true; //启用smtp认证
-        $this->mail->Username = Config::get('main')['username']; //发件人邮箱名
-        $this->mail->Password = Config::get('main')['password']; //163邮箱发件人授权密码
-        $this->mail->From = Config::get('main')['username']; //发件人地址（也就是你的邮箱地址）
+        $this->mail->Username = Config::get('mail')['username']; //发件人邮箱名
+        $this->mail->Password = Config::get('mail')['password']; //163邮箱发件人授权密码
+        $this->mail->From = Config::get('mail')['username']; //发件人地址（也就是你的邮箱地址）
         $this->mail->FromName = 'xingwg'; //发件人姓名
         $this->mail->WordWrap = 80; //设置每行字符长度
         $this->mail->IsHTML( true ); // 是否HTML格式邮件
